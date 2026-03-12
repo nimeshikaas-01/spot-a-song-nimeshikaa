@@ -1,12 +1,10 @@
-export default async function search() {
+export default async function search(request) {
     try {
-        const endpointURL = "";
+        const url = new URL(request.url);
+        const tag = url.searchParams.get("tag");
+        const endpointURL = `https://ws.audioscrobbler.com/2.0/?method=tag.gettoptracks&tag=${tag}&api_key=${Netlify.env.get("SECRET_API_LASTFM")}&format=json&limit=8`;
         const options = {
-            method: "GET",
-            headers:{
-                Authentication: "secret",
-                "x-api-key": Netlify.env.get("SECRET_API_LASTFM")
-            }
+            method: "GET"
         };
 
         const response = await fetch(endpointURL, options);

@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Lynn Schirmer for CFA 2023">
+    <meta name="author" content="Nimeshikaa Saravanakumar">
     <title>SpotASong</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
 </head>
-</head>
-<body>
+    <body>
     <h1>SpotASong</h1>
-<script src="main.js"></script>
-</body>
+    <div class="rectangle"></div>
+    <div class="question-header">HOW ARE YOU FEELING TODAY?</div>
+    <div class="mood-grid">
+        <h2>Select a mood!</h2>
+        <div class="card">
+            <button class="gradient-btn" data-mood="happy">HAPPY</button>
+            <button class="gradient-btn" data-mood="sad">SAD</button>
+            <button class="gradient-btn" data-mood="sleepy">SLEEPY</button>
+        </div>
+        <div class="card">
+            <button class="gradient-btn" data-mood="romantic">ROMANTIC</button>
+            <button class="gradient-btn" data-mood="angry">ANGRY</button>
+            <button class="gradient-btn" data-mood="party">PARTY</button>
+        </div>
+    </div>
+    <button class="final-btn">Find a song</button>
+
+    <div id="results"></div>
+    
+    <script src="main.js"></script>
+    </body>
 </html>

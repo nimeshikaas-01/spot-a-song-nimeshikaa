@@ -26,14 +26,12 @@ moodSelector.forEach(element => {
     });
 });
 
-songResults.forEach(element => {
-    element.addEventListener('click', ()=>{
-        if (!selectedMood) {
-            alert("Please select a mood first!");
-            return;
-        }
-        apiSearch(selectedMood);
-    })
+songResults.addEventListener('click', ()=>{
+    if (!selectedMood) {
+        alert("Please select a mood first!");
+        return;
+    }
+    apiSearch(selectedMood);
 })
 
 function displayResults(data) {

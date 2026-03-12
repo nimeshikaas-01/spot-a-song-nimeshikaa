@@ -73,9 +73,57 @@ h2{
     opacity: 80%;
 }
 
-.final-btn{
-  position: fixed;
-  padding: 20px 30px;
+.final-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 20px 60px;
+  background: linear-gradient(to right, rgb(144, 91, 174), rgb(56, 140, 146));
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Bungee Inline", sans-serif;
+  margin-top: 10%;
+  position: static;
+}
+
+.final-btn:hover {
+  opacity: 80%;
+}
+
+.song-card {
+  background: rgb(30, 30, 30);
+  border: 2px solid rgb(144, 91, 174);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px auto;
+  width: 40%;
   text-align: center;
+}
+
+.song-card h3 {
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 28px;
   color: aliceblue;
+  margin-bottom: 10px;
+}
+
+.song-card p {
+  color: wheat;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.song-card a {
+  background: linear-gradient(to right, rgb(144, 91, 174), rgb(56, 140, 146));
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.song-card a:hover {
+  opacity: 80%;
 }

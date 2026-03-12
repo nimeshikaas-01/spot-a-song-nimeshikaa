@@ -68,13 +68,14 @@ h2{
     border-radius: 8px;
 }
 
-.gradient-btn :active{
-  border-color: aliceblue;
-  border: 10px;
+.gradient-btn.active {
+    border: 3px solid white;
+    opacity: 80%;
 }
 
 .final-btn{
   position: fixed;
   padding: 20px 30px;
   text-align: center;
+  color: aliceblue;
 }

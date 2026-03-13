@@ -45,6 +45,8 @@ function displayResults(data) {
             <h3>${track.name}</h3>
             <p>${track.artist.name}</p>
             <a href="${track.url}" target="_blank">Listen on Last.fm</a>
+            <br/><br/>
+            <button class="gradient-btn" onclick="apiSearch('${selectedMood}')">Try another song</button>
         </div>
     `;
 }
